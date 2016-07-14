@@ -17,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         */
         
+        
+        let person = Person.init(name: "Ana", ageInYears: 39)
+                   print(person.celebrateBirthday())
+        
+        
+        
         // Do not alter
         return true  //
     }   //////////////
