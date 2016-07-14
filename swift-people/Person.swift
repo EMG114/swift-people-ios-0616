@@ -43,9 +43,9 @@ class Person {
     func celebrateBirthday() -> String {
         let birthday: String
         
-        if var age = ageInYears {
-            age += 1
-            birthday = "Happy \(age)\(age.ordinal()) birthday, \(name)!!!"
+        if let age = ageInYears {
+            ageInYears = age + 1
+            birthday = "Happy \(age + 1)\(age.ordinal()) birthday, \(name)!!!"
         } else {
             birthday = "Happy birthday, \(name)!!!"
         }
